@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://ckwm7iqr41hap" path="res://assets/sprites/world_tileset.png" id="2_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://cpsebg2lxc8ax" path="res://scenes/coin.tscn" id="3_lnu2h"]
+[ext_resource type="PackedScene" uid="uid://dg4n7tp4d7q1y" path="res://scenes/slime.tscn" id="4_lbhrr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_yqjtg")
@@ -133,6 +134,7 @@ sources/0 = SubResource("TileSetAtlasSource_lnu2h")
 [node name="Game" type="Node2D" unique_id=1804341812]
 
 [node name="Player" parent="." unique_id=951535104 instance=ExtResource("1_uwrxv")]
+light_mask = 2
 z_index = 1
 position = Vector2(-14, -9)
 
@@ -160,3 +162,7 @@ position = Vector2(-112, -63)
 
 [node name="Coin5" parent="." unique_id=1017220720 instance=ExtResource("3_lnu2h")]
 position = Vector2(-157, -30)
+
+[node name="Slime" parent="." unique_id=1621653348 instance=ExtResource("4_lbhrr")]
+z_index = 1
+position = Vector2(-47, 7)
