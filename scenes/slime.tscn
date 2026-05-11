@@ -61,17 +61,20 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jrxk1"]
-size = Vector2(12, 13)
+size = Vector2(14, 14)
 
 [node name="Slime" type="Node2D" unique_id=1621653348]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=278987373]
+position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_da4t2")
 autoplay = "default"
 frame_progress = 0.8027436
 
 [node name="killzone" parent="." unique_id=259542910 instance=ExtResource("2_p2gj0")]
+position = Vector2(0, 1)
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killzone" unique_id=449852864]
-position = Vector2(0, 4.5)
+position = Vector2(0, -8)
 shape = SubResource("RectangleShape2D_jrxk1")

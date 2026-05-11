@@ -39,8 +39,8 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_fjrip"]
-radius = 5.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g2els"]
+size = Vector2(13, 19)
 
 [node name="Player" type="CharacterBody2D" unique_id=951535104]
 collision_layer = 2
@@ -53,6 +53,6 @@ animation = &"idle"
 autoplay = "idle"
 frame_progress = 0.020101452
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1075891792]
-position = Vector2(0, -5)
-shape = SubResource("CircleShape2D_fjrip")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=115999921]
+position = Vector2(-0.5, -9.5)
+shape = SubResource("RectangleShape2D_g2els")
